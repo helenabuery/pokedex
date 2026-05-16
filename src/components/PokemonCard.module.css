@@ -1,0 +1,92 @@
+.card {
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 16px 12px 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  transition: border-color 0.2s, transform 0.15s, background 0.2s;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 3px;
+  background: var(--type-color, var(--accent));
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.card:hover {
+  border-color: var(--type-color, var(--accent));
+  transform: translateY(-3px);
+  background: var(--bg3);
+}
+
+.card:hover::before { opacity: 1; }
+
+.num {
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--text3);
+  align-self: flex-start;
+}
+
+.imgWrap {
+  width: 88px;
+  height: 88px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.img {
+  width: 88px;
+  height: 88px;
+  object-fit: contain;
+  image-rendering: auto;
+}
+
+.noImg {
+  width: 88px;
+  height: 88px;
+  background: var(--bg3);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text3);
+  font-size: 24px;
+}
+
+.name {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text);
+  text-transform: capitalize;
+}
+
+.types {
+  display: flex;
+  gap: 5px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.type {
+  font-size: 11px;
+  font-weight: 700;
+  font-family: var(--mono);
+  padding: 2px 8px;
+  border-radius: 99px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  opacity: 0.9;
+}
