@@ -1,8 +1,8 @@
 # Pokédex
 
-> 🔴 **Deploy:** [https://SEU-LINK-AQUI.vercel.app](https://SEU-LINK-AQUI.vercel.app)
+> 🔴 **Deploy:** (https://helenabuery.github.io/pokedex/)
 
-Catálogo de Pokémons construído com React + Vite, consumindo a [PokeAPI](https://pokeapi.co) — uma API pública, gratuita e sem necessidade de chave.
+Catálogo de Pokémons construído com React + Vite, consumindo a [PokeAPI](https://pokeapi.co) — uma API pública, gratuita e sem necessidade de chave :). 
 
 ---
 
