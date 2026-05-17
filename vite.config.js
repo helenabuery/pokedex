@@ -3,7 +3,7 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
-  base: '/POK-DEX/',  // ← adicione essa linha
+  base: '/pokedex/',  // ← adicione essa linha
   test: {
     environment: 'jsdom',
     globals: true,
